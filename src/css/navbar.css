@@ -22,23 +22,12 @@
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    list-style-type: none;
+    padding: 5px 14px;
 }
 
 .nav-links a:hover {
     color: red
-}
-
-.nav-links li {
-    list-style-type: none;
-}
-
-.menu li {
-    padding: 5px 14px;
-}
-
-.services {
-    /* DROPDOWN MENU */
-    position: relative;
 }
 
 .dropdown {
@@ -47,21 +36,6 @@
     position: absolute;
     display: none;
     top: 40px;
-}
-
-.dropdown li+li {
-    margin-top: 10px;
-}
-
-.dropdown li {
-    width: 8em;
-    padding: 0.5em 1em;
-    text-align: center;
-}
-
-.dropdown li:hover {
-    background-color:rgb(54, 2, 2);
-    ;
 }
 
 .services:hover .dropdown {
@@ -83,10 +57,6 @@ input[type=checkbox] {
         transition: 0.3s ease;
     }
 
-    .menu li {
-        padding: 5px 13px;
-    }
-
     .logo {
         transition: 0.3s ease;
         font-size: 2em;
@@ -96,10 +66,6 @@ input[type=checkbox] {
 @media (max-width: 744px) {
     .menu {
         transition: 0.3s ease;
-    }
-
-    .menu li {
-        padding: 5px 12px;
     }
 
     .logo {
@@ -113,10 +79,6 @@ input[type=checkbox] {
         transition: 0.3s ease;
     }
 
-    .menu li {
-        padding: 5px 11px;
-    }
-
     .logo {
         transition: 0.3s ease;
         font-size: 1.85em;
@@ -126,10 +88,6 @@ input[type=checkbox] {
 @media (max-width: 650px) {
     .menu {
         transition: 0.3s ease;
-    }
-
-    .menu li {
-        padding: 5px 10px;
     }
 
     .logo {
@@ -142,21 +100,10 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: rgb(93, 0, 0);
+        background-color: rgb(54, 2, 2);
         right: 0;
         left: 0;
         text-align: center;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        /* background-color: whitesmoke; */
-        color: rgb(54, 2, 2);
-        transition: 0.3s ease;
-    }
-
-    .menu li+li {
-        margin-top: 12px;
     }
 
     input[type=checkbox]:checked~.menu {
@@ -171,10 +118,5 @@ input[type=checkbox] {
         left: 50%;
         top: -10px;
         transform: translateX(35%);
-    }
-
-    .dropdown li:hover {
-        background-color: #460202;
-        ;
     }
 }

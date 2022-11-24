@@ -1,16 +1,45 @@
-import * as React from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-function ItemListContainer() {
-    const [clicks, setClicks] = useState(0);
+// Own components
+import { ItemList } from "./ItemList";
+import { Loading } from "./Loading";
 
-    return (
-        <div>
-            <input type="number"></input>
-            <button onClick={() => {setClicks(clicks + 1);}}>Agregar al carrito</button>
-            <h3>Clicks: {clicks}</h3>
-        </div>
-    );
-}
+// Mock
+import Items from "../mocks/wines";
 
-export default ItemListContainer
+export const ItemListContainer = () => {
+  const { category } = useParams();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    new Promise((resolve) => {
+      // Reset the state to show the loading spinner
+      setProducts([]);
+
+      // Simulation of a call to an api
+      return setTimeout(() => {
+        resolve(Items);
+      }, 1000);
+    }).then((data) => {
+      if (category) {
+        const categories = data.filter(
+          (product) => product.category === category
+        );
+        setProducts(categories);
+      } else {
+        setProducts(data);
+      }
+    });
+  }, [category]);
+
+  if (products.length === 0) {
+    return <Loading />;
+  }
+
+  return (
+    <div>
+      <ItemList products={products} />
+    </div>
+  );
+};
