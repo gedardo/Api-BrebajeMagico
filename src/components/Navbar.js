@@ -2,7 +2,7 @@ import "../css/navbar.css";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <p>El Brebaje Magico🍷</p>
@@ -12,11 +12,11 @@ function Navbar() {
           &#9776;
         </label>
         <div className="menu">
-          <Link to="/Home">Home</Link>
-          <Link to="/category/tinto">Tintos</Link>
-          <Link to="/category/blanco">Blancos</Link>
-          <Link to="/category/espumantes">Espumantes</Link>
-          <Link to="/category/rosado">Rosados</Link>
+          <Link to="/">Home</Link>
+          <Link to="/category/Tinto">Tintos</Link>
+          <Link to="/category/Blanco">Blancos</Link>
+          <Link to="/category/Espumantes">Espumantes</Link>
+          <Link to="/category/Rosado">Rosados</Link>
         </div>
       </ul>
       <CartWidget />

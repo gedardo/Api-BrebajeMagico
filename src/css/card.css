@@ -68,9 +68,9 @@
 }
 
 .card button:hover {
-  border-color: rgba(110, 0, 0);
-  color: rgba(110, 0, 0);
-  background-color: yellow;
+  /* border-color: yellow; */
+  color:white;
+  background-color:rgba(110, 0, 0, 0.9);
   transform: scale(1.15);
 }
 
@@ -81,4 +81,66 @@
 
 .card-button {
   text-align: center;
+}
+
+.description {
+  border: 1px solid rgba(251, 251, 251);
+  box-shadow: 0px 6px 10px lightgray;
+  transition: 0.2s ease-out;
+  justify-content: center;
+  border-radius: 4px;
+  width: 280px;
+  margin: 10px;
+}
+
+.description-block img {
+  width: 400px;
+}
+
+.description-block {
+  display: inline-flex;
+  padding-left: 50px;
+}
+
+.detail{
+  padding: 20px;
+}
+
+.detail p{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.detail h4 {
+  font-size: 25px;
+  color: rgb(14, 14, 128);
+}
+
+.addCart {
+  text-align: center;
+}
+
+.addCart span {
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.addCart button{
+  border-color: rgba(110, 0, 0, 0.9);
+  color: rgba(110, 0, 0, 0.9);
+  background-color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.addCart button:hover {
+  /* border-color: yellow; */
+  color:white;
+  background-color:rgba(110, 0, 0, 0.9);
+  transform: scale(1.15);
+}
+
+.addCart button:active {
+  color: white;
+  background-color: rgb(93, 0, 0);
 }

@@ -8,7 +8,7 @@ const Item = ({ product }) => {
   const title = product.nombre.slice(0, 20);
 
   function handleNavigate() {
-    navigate("/item/:${product.id}");
+    navigate(`/item/${product.id}`);
   }
 
   return (

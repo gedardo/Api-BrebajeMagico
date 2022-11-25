@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ItemCount } from "./ItemCount";
+import "../css/card.css"
 
 const ItemDetail = ({ item }) => {
   const navigate = useNavigate();
@@ -23,24 +24,25 @@ const ItemDetail = ({ item }) => {
   }
 
   return (
-    <div >
+    <div className="description-block">
       {/* Item image */}
-      <div >
+      <div>
         <img src={item.imagen} alt={item.nombre} />
       </div>
 
       {/* Item description */}
-      <div>
-        <h2>{item.nombre}</h2>
-        <p>{item.nota}</p>
-        <span>
-          Price: <strong>${item.price}</strong>
-        </span>
+      <div className="detail">
+        <h2>{item.nombre} - {item.category} - {item.varietal}</h2>
+        <h3>Crianza: {item.crianza}</h3>
+        <p>{item.notas}</p>
+        <h4>
+          Precio: <strong>${item.price}</strong>
+        </h4>
         {currentStock > 0 && (
-          <p>In Stock: {currentStock}</p>
+          <p>En Stock: {currentStock}</p>
         )}
 
-        <div>
+        <div className="addCart">
           {/* Count */}
           {currentStock > 0 ? (
             <ItemCount count={count} handleCount={handleCount} />

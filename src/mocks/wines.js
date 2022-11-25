@@ -32,7 +32,7 @@ import imagen31 from "../img/Rutini-Destilado-de-Orujo-de-Malbec-Grapa.webp";
 
 const Wines = [
   {
-    id: 1,
+    id: "1",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "12 meses roble francés",
@@ -44,7 +44,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 2,
+    id: "2",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "14 meses roble francés",
@@ -56,7 +56,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 3,
+    id: "3",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "7 meses roble francés y americano",
@@ -68,7 +68,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 4,
+    id: "4",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "12 meses roble francés",
@@ -80,7 +80,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 5,
+    id: "5",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "12 meses roble francés",
@@ -92,7 +92,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 6,
+    id: "6",
     category: "Tinto",
     varietal: "Malbec",
     crianza: "12 meses roble francés",
@@ -104,7 +104,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 7,
+    id: "7",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "12 meses roble francés",
@@ -116,7 +116,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 8,
+    id: "8",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "7 meses roble francés",
@@ -128,7 +128,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 9,
+    id: "9",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "14 meses roble francés",
@@ -140,7 +140,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 10,
+    id: "10",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "12 meses roble francés",
@@ -152,7 +152,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 11,
+    id: "11",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "18 meses roble francés",
@@ -164,7 +164,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 12,
+    id: "12",
     category: "Tinto",
     varietal: "Cabernet Sauvignon",
     crianza: "12 meses roble francés",
@@ -176,7 +176,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 13,
+    id: "13",
     category: "Blanco",
     varietal: "Chardonnay",
     crianza: "10 meses roble francés",
@@ -188,7 +188,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 14,
+    id: "14",
     category: "Blanco",
     varietal: "Chardonnay",
     crianza: "6 meses roble francés",
@@ -200,7 +200,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 15,
+    id: "15",
     category: "Blanco",
     varietal: "Chardonnay",
     crianza: "9 meses roble francés",
@@ -212,7 +212,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 16,
+    id: "16",
     category: "Blanco",
     varietal: "Chardonnay",
     crianza: "12 meses roble francés",
@@ -224,7 +224,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 17,
+    id: "17",
     category: "Blanco",
     varietal: "Viognier",
     crianza: "6 meses roble francés",
@@ -236,7 +236,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 18,
+    id: "18",
     category: "Blanco",
     varietal: "Pinot Grigio",
     crianza: "6 meses roble francés",
@@ -248,7 +248,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 19,
+    id: "19",
     category: "Blanco",
     varietal: "Blend",
     crianza: "12 meses roble francés",
@@ -260,7 +260,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 20,
+    id: "20",
     category: "Blanco",
     varietal: "Torrontes",
     crianza: "6 meses roble francés",
@@ -272,7 +272,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 21,
+    id: "21",
     category: "Espumantes",
     varietal: "Pinot Noir",
     crianza: "18 meses roble francés",
@@ -284,7 +284,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 22,
+    id: "22",
     category: "Espumantes",
     varietal: "Pinot Noir",
     crianza: "5 meses roble francés",
@@ -296,7 +296,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 23,
+    id: "23",
     category: "Espumantes",
     varietal: "Pinot Noir, Chardonnay",
     crianza: "24 meses sobre lías",
@@ -308,7 +308,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 24,
+    id: "24",
     category: "Espumantes",
     varietal: "Pinot Noir",
     crianza: "18 meses sobre lías",
@@ -320,7 +320,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 25,
+    id: "25",
     category: "Espumantes",
     varietal: "Chardonnay, Pinot Noir",
     crianza: "18 meses sobre lías",
@@ -332,7 +332,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 26,
+    id: "26",
     category: "Espumantes",
     varietal: "Chardonnay, Pinot Noir",
     crianza: "24 meses sobre lías",
@@ -344,7 +344,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 27,
+    id: "27",
     category: "Espumantes",
     varietal: "Malbec",
     crianza: "",
@@ -356,7 +356,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 28,
+    id: "28",
     category: "Rosado",
     varietal: "Malbec",
     crianza: "2 meses de barrica y 2 meses sobre línas",
@@ -368,7 +368,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 29,
+    id: "29",
     category: "Rosado",
     varietal: "Malbec",
     crianza: "6 meses el 100% del corte en roble francés tostado liviano",
@@ -380,7 +380,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 30,
+    id: "30",
     category: "Blanco",
     varietal: "Gewurztraminer",
     crianza: "4 meses en roble francés",
@@ -392,7 +392,7 @@ const Wines = [
     stock: 30,
   },
   {
-    id: 31,
+    id: "31",
     category: "Destilado",
     varietal: "Malbec",
     crianza: "",
