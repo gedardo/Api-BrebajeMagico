@@ -1,37 +1,35 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 // Own components
 import { ItemList } from "./ItemList";
 import { Loading } from "./Loading";
 
 // Mock
-import Items from "../mocks/wines";
+// import Items from "../mocks/wines";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+} from "firebase/firestore";
 
 export const ItemListContainer = () => {
-  const { category } = useParams();
+  // const { category } = useParams();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    new Promise((resolve) => {
-      // Reset the state to show the loading spinner
-      setProducts([]);
+    const db = getFirestore();
 
-      // Simulation of a call to an api
-      return setTimeout(() => {
-        resolve(Items);
-      }, 1000);
-    }).then((data) => {
-      if (category) {
-        const categories = data.filter(
-          (product) => product.category === category
-        );
-        setProducts(categories);
-      } else {
-        setProducts(data);
-      }
+    const itemsCollection = collection(db, "wines");
+    getDocs(itemsCollection).then((snapshot) => {
+      const products = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      setProducts(products);
     });
-  }, [category]);
+  }, []);
 
   if (products.length === 0) {
     return <Loading />;
