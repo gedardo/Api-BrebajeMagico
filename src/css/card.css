@@ -131,10 +131,10 @@
   background-color: white;
   margin-bottom: 20px;
   margin-left: 20px;
+  padding: 1em;
 }
 
 .addCart button:hover {
-  /* border-color: yellow; */
   color:white;
   background-color:rgba(110, 0, 0, 0.9);
   transform: scale(1.15);

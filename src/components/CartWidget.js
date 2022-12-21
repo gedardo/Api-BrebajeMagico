@@ -12,7 +12,7 @@ function CarWidget() {
       
       <Link to="/cart">
         <img src={logo} className="logo" alt="logo" />
-        {count > 0 && <span>{count}</span>}
+        {count > 0 && <span className="logo">{count}</span>}
       </Link>
     </div>
   );

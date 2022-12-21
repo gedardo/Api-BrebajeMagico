@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+}
+.divinput {
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
+
+.divCheckout {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+input {
+  align-items: center;
+  margin: 2em;
+  padding: 10px;
+  width: 550px;
+  display: block;
+}
+
+.checkout button {
+  padding: 1em;
+  border-color: rgba(110, 0, 0, 0.9);
+  color: rgba(110, 0, 0, 0.9);
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 1em;
+  text-align: center;
+  font-size: larger;
+  width: 25%;
+  margin-left: 150px;
+}
+
+.checkout button:hover {
+  border-color: rgba(110, 0, 0);
+  background-color: rgba(110, 0, 0);
+  color: #ddd;
+}
+
+.checkout span {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.checkout img {
+  width: 20%;
+  margin-left: 10%;
+}
+
+.checkout p{
+    text-align: center;
+    color: brown;
+}

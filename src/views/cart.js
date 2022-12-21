@@ -6,32 +6,22 @@ import { Layout } from "../components/Layout";
 import { Loading } from "../components/Loading";
 import { TrashWidget } from "../components/TrashWidget";
 import { CartContext } from "../context/cartContext";
-import "../css/cart.css"
+import "../css/cart.css";
 
 const CartView = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading] = useState(false);
   const navigate = useNavigate();
 
-  const { productsAdded, clear, totalAmount } = useContext(CartContext);
-
-  const handleFinalizePurchase = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      clear();
-      setIsLoading(false);
-      alert("Compra finalizada");
-      navigate("/");
-    }, 2000);
-  };
+  const { productsAdded, totalAmount } = useContext(CartContext);
 
   return (
     <Layout>
       <div className="cart">
         {productsAdded.length === 0 ? (
-          <div>
+          <div className="emptyCart">
             <img src={EmptyCart} alt="Empty Cart" />
             <h1>No has agregado productos</h1>
-            <button onClick={() => navigate("/")}>Ir al Inicio</button>
+            <button className="button" onClick={() => navigate("/")}>AGREGAR</button>
           </div>
         ) : (
           <div>
@@ -54,9 +44,12 @@ const CartView = () => {
               {isLoading ? (
                 <Loading size="50px" />
               ) : (
-                <div>
+                <div className="cartCheck">
                   <span>Total a pagar: ${totalAmount}</span>
-                  <button onClick={handleFinalizePurchase}>
+                  <button onClick={() => navigate("/")}>
+                    Seguir Comprando
+                  </button>
+                  <button onClick={() => navigate("/checkout")}>
                     Finalizar Compra
                   </button>
                 </div>

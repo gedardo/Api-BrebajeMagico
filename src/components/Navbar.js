@@ -8,7 +8,7 @@ const Navbar = () => {
       <p>El Brebaje Magico🍷</p>
       <ul className="nav-links">
         <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" className="hamburger">
+        <label htmlFor="checkbox_toggle" className="hamburger">
           &#9776;
         </label>
         <div className="menu">
